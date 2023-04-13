@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --veryLightGrayishBlue:hsl(240, 78%, 98%);
+    --lightGrayishBlue:hsl(234, 14%, 74%);
+    --grayishBlue:hsl(233, 13%, 49%);
+    --darkGrayishBlue:hsl(232, 13%, 33%);
+}
+
+.component{
+    font-family: 'Montserrat',sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+.top h1{
+    margin-bottom: 2rem;
+    color: var(--grayishBlue);
+}
+
+.button-switch{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.button-switch p{
+    color: var(--lightGrayishBlue);
+}
+
+.container-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol{
+    font-size: 1.5rem;
+}
+
+.card{
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card:nth-child(2){
+    color: #fff;
+    background:linear-gradient(to bottom, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+
+.card-head{
+    margin-bottom: .5rem;
+}
+
+.card-head p{
+    text-transform: capitalize;
+}
+
+.card-head h1{
+    font-size: calc(3rem + 1vw);
+}
+
+
+.card-middle p{
+    padding:1rem 0;
+    margin: 0;
+  
+}
+
+.card-middle p:nth-child(1){
+    border-top: 1px solid var(--lightGrayishBlue);
+    border-bottom: 1px solid var(--lightGrayishBlue);
+}
+
+.card-middle p:nth-child(2), .card-middle p:nth-child(3){
+    border-bottom: 1px solid var(--lightGrayishBlue);
+}
+
+.card-bottom{
+    margin-top: 2rem;
+}
+
+.btn-white{
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:#fff;
+    color: hsl(237, 63%, 64%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.8rem 0;
+    width: 100%;
+}
+
+.btn-blue{
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background:linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.8rem 0;
+    width: 100%;
+}
+
+ #btn-switch{
+    display: flex;
+    justify-content: right;
+    height: 30px;
+    width: 50px;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+ #circle{
+    height: 100%;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/*HOVER EFFECTS*/
+
+#btn-switch:hover{
+    opacity: .8;
+}
+
+.btn-blue:hover,.btn-white:hover{
+    background: transparent;
+}
+
+.btn-blue:hover{
+    color: hsl(237, 63%, 64%);
+    border:1px solid hsl(237, 63%, 64%);
+}
+
+.btn-white:hover{
+    color: #fff;
+    border:1px solid #fff;
+}
+
+@media screen and (min-width:800px){
+    
+    .top h1{
+        font-size: 1.7rem;
+    }
+
+    .button-switch{
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    #btn-switch{
+        margin: 0 1rem;
+    }
+
+    .bottom{
+        margin-top: 3rem;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 270px;
+    }
+
+
+}
